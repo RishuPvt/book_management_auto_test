@@ -156,12 +156,11 @@ The `requirements.txt` file contains all necessary Python packages:
    **Create the book table:**
 
    ```sql
-  CREATE TABLE book (
-    id SERIAL PRIMARY KEY,
-    publisher VARCHAR(255) NOT NULL,
-    name VARCHAR(255) NOT NULL,
-    date DATE NOT NULL,
-    cost DECIMAL(10, 2) NOT NULL
+   CREATE TABLE book (
+       id SERIAL PRIMARY KEY,
+       publisher VARCHAR(255),
+       name VARCHAR(255),
+       date DATE
    );
    ```
 
@@ -552,6 +551,7 @@ The project includes Postman collection for automated API testing:
 ## License
 
 This project is for educational purposes.
+
 
 
 
